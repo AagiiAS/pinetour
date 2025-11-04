@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.flex {
+  display: flex;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.align-center {
+  align-items: center;
+}
+.container {
+  flex-direction: column;
+  width: 1440px;
+  margin: auto;
+}
+.hero {
+  background-image: url("HeroImage.png");
+  width: 100%;
+  height: 770px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin-bottom: 0;
+}
+
+.logo {
+  margin: 33px 0 33px 118px;
+}
+.action_container {
+  gap: 24px;
+  color: white;
+  font-size: 18px;
+  margin: 39px 0;
+}
+.en {
+  margin: 30px 118px 30px 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 24px;
+  font-size: 14px;
+  font-weight: 600px;
+  font-family: sans-serif;
+}
+.text {
+  color: white;
+  /* width: 618px;
+  height: 394px; */
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  text-align: center;
+  margin: auto;
+}
+.location {
+  background-image: url(./Locationimage.png);
+  height: 500px;
+  width: 100%;
+  background-size: contain;
+  background-position: center;
+  margin-top: 1px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 52px;
+  margin: 0 109px;
+}
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 275px;
+  height: 275px;
+  border: 1px solid black;
+  border-radius: 40px;
+}
+/* .roadmap {
+  background-image: url("./Roadmapimage.png");
+  height: 770px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+} */
+/* .footer {
+  background-image: url("/Users/25LP6067/Desktop/project1/trip/Price&Footerimage.png");
+  height: 100vh;
+} */
