@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
 }
 .flex {
   display: flex;
@@ -20,7 +21,7 @@
   margin: auto;
 }
 .hero {
-  background-image: url("HeroImage.png");
+  background-image: url("./images/HeroImage.png");
   width: 100%;
   height: 770px;
   background-repeat: no-repeat;
@@ -53,43 +54,94 @@
 }
 .text {
   color: white;
-  /* width: 618px;
-  height: 394px; */
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
   text-align: center;
   margin: auto;
 }
+.t1 {
+  font-size: 80px;
+  opacity: 80%;
+  margin-bottom: 0;
+}
+.t2 {
+  font-size: 250px;
+  margin-top: 0;
+}
+.t3 {
+  font-size: 64px;
+  opacity: 90%;
+}
 .location {
-  background-image: url(./Locationimage.png);
+  background-image: url(./images/Locationimage.png);
   height: 500px;
   width: 100%;
   background-size: contain;
   background-position: center;
   margin-top: 1px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 52px;
-  margin: 0 109px;
+  gap: 40px;
 }
+
+.overlay:hover {
+  background-color: aliceblue;
+  opacity: 0.5;
+}
+.w1 {
+  font-size: 25px;
+  text-align: center;
+  font-family: sans-serif;
+}
+
 .card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 275px;
   height: 340px;
-  border: 1px solid black;
+  border: 1px solid white;
   border-radius: 40px;
-}
-/* .roadmap {
-  background-image: url("./Roadmapimage.png");
-  height: 770px;
+  background-size: cover;
   background-repeat: no-repeat;
+  color: white;
+  box-shadow: 5px 5px#29728b40, -5px -5px #1f72aa75;
+}
+.c1 {
+  background-image: url("./images/3.png");
+}
+.c2 {
+  background-image: url("./images/2.png");
+}
+.c3 {
+  background-image: url("./images/1.png");
+}
+.c4 {
+  background-image: url("./images/4.png");
+}
+
+.roadmap {
+  background-image: url("./images/Roadmapimage.png");
+  height: 770px;
+  width: 100%;
+  /* background-repeat: no-repeat; */
   background-size: contain;
   background-position: center;
-} */
+  margin-top: 1px;
+  flex-direction: column;
+}
+
+.head {
+  width: 1440px;
+  height: 85px;
+  /* text-align: center; */
+  flex-direction: column;
+}
+.te1 {
+  font-size: 42px;
+  font-weight: bold;
+}
+.te2 {
+  font-size: 15px;
+}
+.name {
+  width: 1200px;
+  height: 640px;
+}
+
 /* .footer {
   background-image: url("/Users/25LP6067/Desktop/project1/trip/Price&Footerimage.png");
   height: 100vh;
