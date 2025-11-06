@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -79,17 +81,19 @@
   /* margin-top: 1px; */
   gap: 40px;
 }
-
-.overlay:hover {
-  background-color: aliceblue;
-  opacity: 0.5;
-}
-.w1 {
+.overlay {
+  width: 100%;
+  height: 100%;
+  color: #fdfdfecc;
   font-size: 37px;
   text-align: center;
-  /* text-wrap: inherit; */
 }
 
+.overlay:hover {
+  background-color: #29292966;
+  border-radius: 40px;
+  color: #ffffff;
+}
 .card {
   width: 275px;
   height: 340px;
@@ -98,8 +102,10 @@
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
-  box-shadow: 5px 5px#29728b40, -5px -5px #1f72aa75;
+  box-shadow: 7px 7px#29728b40, -6px -6px #1f72aa75;
+  /* margin: 0 10px; */
 }
+
 .c1 {
   background-image: url("./images/3.png");
 }
@@ -120,9 +126,9 @@
   /* background-repeat: no-repeat; */
   background-size: contain;
   background-position: center;
-  margin-top: 1px;
   flex-direction: column;
   position: relative;
+  /* margin-bottom: 1px; */
 }
 
 .head {
@@ -153,6 +159,21 @@
   border-radius: 120px;
   background-color: #eee9d9;
   padding: 30px;
+  border: 3px solid #eee9d9;
+}
+.Inter {
+  font-family: "Inter";
+  font-size: 24px;
+  font-weight: 500px;
+}
+.gap {
+  gap: 12px;
+}
+
+.Mont {
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 400px;
 }
 .display-none {
   display: none;
@@ -164,11 +185,9 @@
   right: 12%;
 }
 .item:hover {
-  border: 3px solid white;
+  border-color: white;
 }
-/* .gap1 {
-  gap: 2px;
-} */
+
 .img {
   margin-left: 10px;
 }
@@ -178,9 +197,12 @@
   width: 52px;
   font-size: 14px;
   border-radius: 100%;
+  font-family: "Montserrat";
 }
 .item2 {
   background-color: #8bb8c1cc;
+  border: 3px solid #8bb8c1cc;
+  /* border-style: hidden; */
 }
 
 .item:hover + .picture2 {
@@ -191,6 +213,7 @@
 
 .item3 {
   background-color: #aad8d7cc;
+  border: 3px solid #aad8d7cc;
 }
 .item:hover + .picture3 {
   display: block;
@@ -199,10 +222,12 @@
 }
 .item4 {
   background-color: #8bc0bdcc;
+  border: 3px solid #8bc0bdcc;
 }
 
 .item5 {
   background-color: #97cce0cc;
+  border: 3px solid #97cce0cc;
 }
 .item:hover + .picture5 {
   display: block;
@@ -212,15 +237,145 @@
 
 .footer {
   background-image: url("./images/Price&Footerimage.png");
-  height: 770px;
+  /* height: 1120px; */
   width: 100%;
   flex-direction: column;
+  gap: 79px;
 }
 .head2 {
-  height: 85px;
+  /* height: 85px; */
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+}
+.Inter-40 {
+  font-family: "Inter";
+  font-size: 42px;
+  font-weight: 600;
+}
+.Inter-20 {
+  font-family: "Inter";
+  font-size: 20px;
+  font-weight: 500;
+  color: #18181bb2;
+  opacity: 70%;
 }
 .package {
+  width: 1200px;
+  height: 527px;
+  /* flex-direction: row; */
+  /* border: 1px solid red; */
+  gap: 24px;
 }
-.bottom {
-  height: 204px;
+.board {
+  flex-direction: column;
+  width: 384px;
+  height: 527px;
+  background-color: white;
+  border-radius: 40px;
+}
+.board:hover {
+  /* background-color: #1f72aa75;
+   */
+  box-shadow: 8px 8px#29728b40, -8px -8px #29292966;
+}
+.board:hover .button {
+  background-color: #3f3a3a;
+  color: white;
+}
+.type {
+  /* height: 92px; */
+  /* border: 1px solid red; */
+  gap: 16px;
+  padding: 30px;
+}
+.Inter-18 {
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 500;
+}
+.core {
+  height: 290px;
+  gap: 32px;
+  margin: 0 24px;
+}
+.price {
+  flex-direction: column;
+  height: 78px;
+  /* border: 1px solid red; */
+}
+.Mont-40 {
+  font-family: "Montserrat";
+  font-size: 40px;
+  font-weight: 600;
+}
+.Inter-16 {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 500;
+  color: #919191;
+}
+.includes {
+  height: 180px;
+  flex-direction: column;
+  gap: 16px;
+  /* border: 1px solid red; */
+}
+
+.Inter-14 {
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 500;
+  color: #3f4145;
+}
+.desc {
+  gap: 20px;
+}
+.button {
+  height: 48px;
+  width: 336px;
+  background-color: #a4d1e2;
+  border-radius: 60px;
+  margin: 0 24px;
+}
+.button:hover {
+  background-color: #3f3a3a;
+  color: white;
+}
+.Inter-16a {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 500;
+}
+.button-pri {
+  width: 91px;
+  height: 27px;
+  background-color: #6972b5;
+  border-radius: 60px;
+  font-family: "Inter";
+  font-size: 16px;
+  color: white;
+}
+
+.nar_box {
+  width: 1200px;
+  margin-bottom: 80px;
+  margin-top: 150px;
+  align-items: center;
+}
+.social {
+  gap: 20px;
+}
+.fb {
+  height: 44px;
+  width: 167px;
+  background-color: #fafbfc;
+  border-radius: 60px;
+  gap: 10px;
+}
+.Mont-18 {
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: 700;
+  color: #6972b5;
 }
