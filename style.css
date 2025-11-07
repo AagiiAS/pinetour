@@ -1,6 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
   margin: 0;
@@ -58,8 +56,8 @@
 }
 .text {
   color: white;
-  text-align: center;
   flex-direction: column;
+  margin-top: 69px;
 }
 .t1 {
   font-size: 80px;
@@ -67,11 +65,13 @@
 }
 .t2 {
   font-size: 250px;
+  line-height: 80%;
 }
 .t3 {
   font-size: 64px;
   opacity: 90%;
 }
+
 .location {
   background-image: url(./images/Locationimage.png);
   height: 500px;
@@ -87,6 +87,9 @@
   color: #fdfdfecc;
   font-size: 37px;
   text-align: center;
+}
+.loc_text {
+  width: 80%;
 }
 
 .overlay:hover {
@@ -107,13 +110,13 @@
 }
 
 .c1 {
-  background-image: url("./images/3.png");
+  background-image: url("./images/1.png");
 }
 .c2 {
   background-image: url("./images/2.png");
 }
 .c3 {
-  background-image: url("./images/1.png");
+  background-image: url("./images/3.png");
 }
 .c4 {
   background-image: url("./images/4.png");
@@ -130,6 +133,30 @@
   position: relative;
   /* margin-bottom: 1px; */
 }
+.map {
+  display: block;
+  position: absolute;
+  right: 38%;
+  top: 30%;
+}
+.map1 {
+  display: block;
+  position: absolute;
+  right: 45%;
+  top: 45%;
+}
+.map2 {
+  display: block;
+  position: absolute;
+  right: 24.5%;
+  top: 42%;
+}
+.map3 {
+  display: block;
+  position: absolute;
+  right: 35%;
+  top: 65%;
+}
 
 .head {
   width: 1440px;
@@ -139,10 +166,14 @@
 }
 .te1 {
   font-size: 42px;
-  font-weight: bold;
+  font-weight: 600;
+  font-family: "Inter";
 }
 .te2 {
-  font-size: 15px;
+  font-size: 20px;
+  font-family: "Inter";
+  font-family: 500;
+  color: #18181bb2;
 }
 .box {
   width: 500px;
@@ -182,7 +213,12 @@
 .item:hover + .picture {
   display: block;
   position: absolute;
-  right: 12%;
+  right: 19%;
+  top: 29%;
+  z-index: 1;
+}
+.item:hover + .map {
+  opacity: 0;
 }
 .item:hover {
   border-color: white;
@@ -197,7 +233,7 @@
   width: 52px;
   font-size: 14px;
   border-radius: 100%;
-  font-family: "Montserrat";
+  font-family: "Overpass";
 }
 .item2 {
   background-color: #8bb8c1cc;
@@ -208,7 +244,9 @@
 .item:hover + .picture2 {
   display: block;
   position: absolute;
-  right: 35%;
+  right: 29%;
+  top: 17%;
+  z-index: 1;
 }
 
 .item3 {
@@ -218,7 +256,9 @@
 .item:hover + .picture3 {
   display: block;
   position: absolute;
-  right: 30%;
+  right: 35%;
+  top: 30%;
+  z-index: 1;
 }
 .item4 {
   background-color: #8bc0bdcc;
@@ -233,6 +273,7 @@
   display: block;
   position: absolute;
   right: 25%;
+  z-index: 1;
 }
 
 .footer {
